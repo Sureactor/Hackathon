@@ -36,17 +36,17 @@ env:
   OPENSHIFT_NAMESPACE: ""
 
   # 🖊️ EDIT to set a name for your OpenShift app, or a default one will be generated below.
-  APP_NAME: ""
+  APP_NAME: "hackathon"
 
   # 🖊️ EDIT with the port your application should be accessible on.
   # If the container image exposes *exactly one* port, this can be left blank.
   # Refer to the 'port' input of https://github.com/redhat-actions/oc-new-app
-  APP_PORT: ""
+  APP_PORT: "8080"
 
   # 🖊️ EDIT to change the image registry settings.
   # Registries such as GHCR, Quay.io, and Docker Hub are supported.
-  #IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
-  IMAGE_REGISTRY: docker.io/library
+  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
+  #IMAGE_REGISTRY: docker.io/library
   IMAGE_REGISTRY_USER: ${{ github.actor }}
   IMAGE_REGISTRY_PASSWORD: ${{ github.token }}
 
@@ -145,7 +145,7 @@ jobs:
         path_context: '.'
         # Builder image for a java project
         builder_image: 'registry.access.redhat.com/openjdk/openjdk-11-rhel7'
-        image: ${{ env.IMAGE_NAME }}
+        image: ${{ env.APP_NAME }}
         tags: ${{ env.IMAGE_TAGS }}
 
     # https://github.com/redhat-actions/push-to-registry#readme
