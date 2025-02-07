@@ -1,7 +1,7 @@
 # Banking Portal UI
 
 
-## Features
+### Features
 
 - User Registration: Users can register by providing their details, such as name, email, address, and phone number.
 - PIN Management: Users can create and update their PINs for added security.
