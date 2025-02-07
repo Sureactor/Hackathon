@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
 })
+//DashBoardComponent
 export class DashboardComponent implements OnInit {
   showPINCreationModel: boolean = false;
 
