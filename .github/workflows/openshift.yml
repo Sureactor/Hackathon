@@ -52,7 +52,7 @@ env:
   IMAGE_REGISTRY_PASSWORD: success@1
 
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
-  IMAGE_TAGS: ""
+  IMAGE_TAGS: "V1"
 
 on:
   # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
@@ -155,7 +155,7 @@ jobs:
       uses: redhat-actions/push-to-registry@v2
       with:
         image: ${{ env.APP_NAME }}
-        tags: ${{ env.IMAGE_TAGS }}
+        tags: docker.io/suremusician/hackathon:V1
         registry: ${{ env.IMAGE_REGISTRY }}
         username: ${{ env.IMAGE_REGISTRY_USER }}
         password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
