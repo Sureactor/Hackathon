@@ -47,7 +47,8 @@ env:
   # Registries such as GHCR, Quay.io, and Docker Hub are supported.
   #IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
   IMAGE_REGISTRY: docker.io/library
-  IMAGE_REGISTRY_USER: ${{ github.actor }}
+  #IMAGE_REGISTRY_USER: ${{ github.actor }}
+  IMAGE_REGISTRY_USER: suremusician
   IMAGE_REGISTRY_PASSWORD: ${{ github.token }}
 
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
