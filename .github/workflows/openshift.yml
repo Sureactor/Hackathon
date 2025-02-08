@@ -46,7 +46,7 @@ env:
   # 🖊️ EDIT to change the image registry settings.
   # Registries such as GHCR, Quay.io, and Docker Hub are supported.
   #IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
-  IMAGE_REGISTRY: docker.io/library
+  IMAGE_REGISTRY: docker.io/suremuscian
   #IMAGE_REGISTRY_USER: ${{ github.actor }}
   IMAGE_REGISTRY_USER: suremusician
   IMAGE_REGISTRY_PASSWORD: success@1
@@ -155,7 +155,7 @@ jobs:
       uses: redhat-actions/push-to-registry@v2
       with:
         image: ${{ env.APP_NAME }}
-        tags: docker.io/suremusician/hackathon:V1
+        tags: ${{ env.IMAGE_TAGS }}
         registry: ${{ env.IMAGE_REGISTRY }}
         username: ${{ env.IMAGE_REGISTRY_USER }}
         password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
