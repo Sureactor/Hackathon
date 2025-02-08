@@ -49,7 +49,7 @@ env:
   IMAGE_REGISTRY: docker.io/library
   #IMAGE_REGISTRY_USER: ${{ github.actor }}
   IMAGE_REGISTRY_USER: suremusician
-  IMAGE_REGISTRY_PASSWORD: ${{ github.token }}
+  IMAGE_REGISTRY_PASSWORD: success@1
 
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
   IMAGE_TAGS: ""
