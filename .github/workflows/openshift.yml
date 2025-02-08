@@ -1,9 +1,9 @@
 name: OpenShift 
 
 env: 
-  IMAGE_REGISTRY: docker.io
-  REGISTRY_USER: suremusician
-  REGISTRY_PASSWORD: success@1
+  IMAGE_REGISTRY: quay.io
+  REGISTRY_USER: surdirector1998
+  REGISTRY_PASSWORD: suremusician1998@1
   APP_NAME: hackathon
   IMAGE_TAGS: latest ${{ github.sha }}
 
